@@ -12,27 +12,61 @@ function SheetJSApp() {
 			/* Parse data */
 			const bstr = e.target.result;
 			const wb = XLSX.read(bstr, {type:rABS ? 'binary' : 'array'});
-			/* Get first worksheet */
-			const wsname = wb.SheetNames[0];
-			const ws = wb.Sheets[wsname];
-			/* Convert array of arrays */
-			const data = XLSX.utils.sheet_to_json(ws, {header:1});
-			/* Update state */
-			setData(data);
-			setCols(make_cols(ws['!ref']))
+      displayWorkbook(wb);
 		};
 		if(rABS) reader.readAsBinaryString(file); else reader.readAsArrayBuffer(file);
 	}
 
+  const handleUrl = (url) => {
+    console.log(url)
+    let oReq = new XMLHttpRequest();
+    oReq.open("GET", url, true);
+    oReq.responseType = "arraybuffer";
+    oReq.onload = function (e) {
+      let arraybuffer = oReq.response;
+      /*             not responseText!!              */
+
+      /* convert data to binary string */
+      let data = new Uint8Array(arraybuffer);
+      let arr = new Array();
+      for (let i = 0; i != data.length; ++i) arr[i] = String.fromCharCode(data[i]);
+      let bstr = arr.join("");
+      /* Call XLSX */
+      let workbook = XLSX.read(bstr, {type: "binary"});
+      displayWorkbook(workbook);
+    };
+
+    oReq.send();
+  }
+
+  const displayWorkbook = (wb) => {
+    /* Get first worksheet */
+    const wsname = wb.SheetNames[0];
+    const ws = wb.Sheets[wsname];
+    /t Convert array of arrays */
+    const data = XLSX.utils.sheet_to_json(ws, {header:1});
+    /* Update state */
+    setData(data);
+    setCols(make_cols(ws['!ref']));
+  }
+
 	return (
-	<DragDropFile handleFile={handleFile}>
-		<div className="row"><div className="col-xs-12">
-			<DataInput handleFile={handleFile} />
-		</div></div>
-		<div className="row"><div className="col-xs-12">
-			<OutTable data={data} cols={cols} />
-		</div></div>
-	</DragDropFile>
+    <div>
+      <DragDropFile handleFile={handleFile}>
+        <h2>Drag or choose a spreadsheet file</h2>
+        <div className="">
+          <h3>Select a file</h3>
+          <DataInput handleFile={handleFile} />
+        </div>
+      </DragDropFile>
+      <div className="mb-6">
+        <h3>Enter spreadsheet URL</h3>
+        <UrlInput handleUrl={handleUrl}  />
+      </div>
+      <div className="row">
+        <OutTable data={data} cols={cols} />
+      </div>
+    </div>
 	);
 }
 
@@ -64,6 +98,31 @@ function DragDropFile({ handleFile, children }) {
 	);
 }
 
+function UrlInput({ handleUrl }) {
+	const handleChange = (e) => {
+		const url = e.target.value;
+		if(url) handleUrl(url);
+	};
+
+	return (
+		<form className="form-inline">
+			<div className="form-group">
+				<label htmlFor="url">Spreadsheet URL (with CORS enabled!)</label>
+        <br />
+        <small>Here is one: http://localhost:3000/_files/eight-centuries-of-global-real-interest-rates-r-g-and-the-suprasecular-decline-1311-2018-data.xlsx</small>
+				<br />
+				<input 
+					type="text" 
+					id="url" 
+          className="border w-96"
+					accept={SheetJSFT} 
+					onChange={handleChange} 
+				/>
+			</div>
+		</form>
+	)
+}
+
 /*
   Simple HTML5 file input wrapper
   usage: <DataInput handleFile={callback} />
@@ -79,7 +138,7 @@ function DataInput({ handleFile }) {
 	return (
 		<form className="form-inline">
 			<div className="form-group">
-				<label htmlFor="file">Drag or choose a spreadsheet file</label>
+				<label htmlFor="file">Select spreadsheet file</label>
 				<br />
 				<input 
 					type="file" 
