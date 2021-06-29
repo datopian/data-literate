@@ -29,28 +29,20 @@ const components = {
 export default function PostPage({ source, frontMatter }) {
   return (
     <Layout>
-      <div className="post-header">
-        <h1>{frontMatter.title}</h1>
-        {frontMatter.description && (
-          <p className="description">{frontMatter.description}</p>
-        )}
-      </div>
+      <header>
+        <div className="mb-6">
+          <h1>{frontMatter.title}</h1>
+          {frontMatter.author && (
+            <div className="-mt-6"><p className="opacity-60 pl-1">{frontMatter.author}</p></div>
+          )}
+          {frontMatter.description && (
+            <p className="description">{frontMatter.description}</p>
+          )}
+        </div>
+      </header>
       <main>
         <MDXRemote {...source} components={components} />
       </main>
-
-      <style jsx>{`
-        .post-header h1 {
-          margin-bottom: 0;
-        }
-
-        .post-header {
-          margin-bottom: 2rem;
-        }
-        .description {
-          opacity: 0.6;
-        }
-      `}</style>
     </Layout>
   )
 }

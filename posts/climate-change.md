@@ -1,10 +1,9 @@
 ---
 title: Climate Change
+author: Rufus Pollock
 ---
 
-This evolving document represents my own investigation into the climate crisis and what we can (and should) be doing about it.
-
-My aim is not originality but rather to document and share my own path through this enormous topic.
+This evolving document represents my own investigation into the climate crisis and what we can (and should) be doing about it. The aim is to document and share my path through this topic rather than to offer anything original.
 
 Motivating questions:
 
