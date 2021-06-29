@@ -246,6 +246,25 @@ year,temperature_anomaly,lower1,upper1,lower2,upper2,lower3,upper3,lower4,upper4
 2021,0.551,0.513,0.597,0.526,0.577,0.363,0.740,0.504,0.605,0.358,0.749
 ```
 
+## What do we need to do?
+
+### What emissions reductions do we need?
+
+![](https://ourworldindata.org/app/uploads/2020/11/15C-and-2C-mitigation-scenarios-1536x987.png)
+
+Source: fn 10 in https://ourworldindata.org/worlds-energy-problem
+
+
+### What options are there for doing that?
+
+### Which are feasible?
+
+### Can we get enough from Solar (alone)?
+
+See https://www.worldbank.org/en/topic/energy/publication/solar-photovoltaic-power-potential-by-country
+
+
+
 
 ## Reading List
 
