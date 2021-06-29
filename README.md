@@ -15,3 +15,11 @@ I want things like:
 * Have datasets as markdown files using the frontmatter for metadata
 * Datasets within markdown files using backtick notation e.g. \`\`\`dataset
 * Embedded csv or json data turned into nie tables
+
+## Data Literate Documents
+
+Our "data literate" document is a markdown (or MDX) file with the following additional features:
+
+* :rocket: **Table of Contents**: quickly add a table of contents by adding a markdown heading 'Table of Contents', 'toc', or 'table-of-contents' (thanks to `remark-toc`)
+* Table rendering: TODO
+* :construction: Auto-render linked tables: auto-convert links to CSV or Excel into inline tables. [in progress]
