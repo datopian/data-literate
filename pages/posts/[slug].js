@@ -1,5 +1,8 @@
 import fs from 'fs'
 import matter from 'gray-matter'
+import toc from 'remark-toc'
+import slug from 'remark-slug'
+
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import dynamic from 'next/dynamic'
@@ -62,7 +65,7 @@ export const getStaticProps = async ({ params }) => {
   const mdxSource = await serialize(content, {
     // Optionally pass remark/rehype plugins
     mdxOptions: {
-      remarkPlugins: [],
+      remarkPlugins: [toc, slug],
       rehypePlugins: [],
     },
     scope: data,

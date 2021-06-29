@@ -2,7 +2,7 @@
 title: Climate Change
 ---
 
-This evolving documents represents my own investigation into the climate crisis and what we can (and should) be doing about it.
+This evolving document represents my own investigation into the climate crisis and what we can (and should) be doing about it.
 
 My aim is not originality but rather to document and share my own path through this enormous topic.
 
@@ -21,6 +21,8 @@ Motivating questions:
   * What kind of mitigation or adaptation is possible?
   * Is it "too late" to stop dangerous warming?
 * What is being done? By whom?
+
+## Table of Contents
 
 ## Conceptual Model
 
