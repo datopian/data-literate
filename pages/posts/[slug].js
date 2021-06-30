@@ -11,7 +11,7 @@ import Link from 'next/link'
 import path from 'path'
 
 import CustomLink from '../../components/CustomLink'
-import { Vega, VegaLite } from 'react-vega';
+import { Vega, VegaLite } from 'react-vega'
 
 import Layout from '../../components/Layout'
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils'
@@ -30,6 +30,7 @@ const components = {
   // TODO: try and make these dynamic ...
   Vega: Vega,
   VegaLite: VegaLite,
+  LineChart: dynamic(() => import('../../components/LineChart')),
   Head,
 }
 

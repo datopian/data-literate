@@ -86,7 +86,40 @@ Year,Temp Anomaly,
 
 ## Charts
 
-You can create charts using vega or vega-lite. Here's an example using vega-lite:
+You can create charts using a simple syntax.
+
+### Line Chart
+
+<LineChart data={
+    [
+      ["1850",-0.41765878],
+      ["1851",-0.2333498],
+      ["1852",-0.22939907],
+      ["1853",-0.27035445],
+      ["1854",-0.29163003]
+    ]
+  }
+  />
+
+```
+<LineChart data={
+    [
+      ["1850",-0.41765878],
+      ["1851",-0.2333498],
+      ["1852",-0.22939907],
+      ["1853",-0.27035445],
+      ["1854",-0.29163003]
+    ]
+  }
+  />
+```
+
+NB: we have quoted years as otherwise not interpreted as dates but as integers ...
+
+
+### Vega and Vega Lite
+
+You can using vega or vega-lite. Here's an example using vega-lite:
 
 <VegaLite data={ { "table": [
       {
@@ -154,10 +187,3 @@ You can create charts using vega or vega-lite. Here's an example using vega-lite
 
 ```
 
----
-
-Go back [home](/).
-
----
-
-Go back [home](/).
