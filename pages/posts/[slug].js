@@ -9,7 +9,10 @@ import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Link from 'next/link'
 import path from 'path'
+
 import CustomLink from '../../components/CustomLink'
+import { Vega, VegaLite } from 'react-vega';
+
 import Layout from '../../components/Layout'
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils'
 
@@ -24,6 +27,9 @@ const components = {
   // See the notes in README.md for more details.
   TestComponent: dynamic(() => import('../../components/TestComponent')),
   Table: dynamic(() => import('../../components/Table')),
+  // TODO: try and make these dynamic ...
+  Vega: Vega,
+  VegaLite: VegaLite,
   Head,
 }
 

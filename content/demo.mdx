@@ -84,6 +84,80 @@ Year,Temp Anomaly,
 `} />
 
 
+## Charts
+
+You can create charts using vega or vega-lite. Here's an example using vega-lite:
+
+<VegaLite data={ { "table": [
+      {
+        "y": -0.418,
+        "x": 1850
+      },
+      {
+        "y": 0.923,
+        "x": 2020
+      }
+      ]
+    }
+  } spec={
+    {
+      "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+      "mark": "bar",
+      "data": {
+          "name": "table"
+      },
+      "encoding": {
+          "x": {
+              "field": "x",
+              "type": "ordinal"
+          },
+          "y": {
+              "field": "y",
+              "type": "quantitative"
+          }
+      }
+    }
+  } />
+
+
+```jsx
+<VegaLite data={ { "table": [
+      {
+        "y": -0.418,
+        "x": 1850
+      },
+      {
+        "y": 0.923,
+        "x": 2020
+      }
+      ]
+    }
+  } spec={
+    {
+      "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+      "mark": "bar",
+      "data": {
+          "name": "table"
+      },
+      "encoding": {
+          "x": {
+              "field": "x",
+              "type": "ordinal"
+          },
+          "y": {
+              "field": "y",
+              "type": "quantitative"
+          }
+      }
+    }
+  } />
+
+```
+
+---
+
+Go back [home](/).
+
 ---
 
 Go back [home](/).
