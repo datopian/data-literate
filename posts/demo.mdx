@@ -1,0 +1,89 @@
+---
+title: Demo
+---
+
+This demos and documents Data Literate features live.
+
+## Table of Contents
+
+## Frontmatter
+
+Posts can have frontmatter like:
+
+```
+---
+title: Hello World
+author: Rufus Pollock
+---
+```
+
+The title and description are pulled from the MDX file and processed using `gray-matter`. Additionally, links are rendered using a custom component passed to `next-mdx-remote`.
+
+## A Table of Contents
+
+You can create a table of contents by having a markdown heading named `Table of Contents`. You can see an example at the start of this post.
+
+## Test Component
+
+This just shows a react component rendering in the page:
+
+<TestComponent name="you" />
+
+## A Table
+
+You can create tables ...
+
+```
+<Table cols={[
+    { key: 'id', name: 'ID' },
+    { key: 'firstName', name: 'First name' },
+    { key: 'lastName', name: 'Last name' },
+    { key: 'age', name: 'Age' }
+  ]} data={[
+    { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
+    { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
+    { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
+    { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
+    { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
+    { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
+    { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
+  ]}
+  />
+```
+
+<Table cols={[
+    { key: 'id', name: 'ID' },
+    { key: 'firstName', name: 'First name' },
+    { key: 'lastName', name: 'Last name' },
+    { key: 'age', name: 'Age' }
+  ]} data={[
+    { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
+    { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
+    { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
+    { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
+    { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
+    { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
+    { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
+  ]}
+  />
+
+You can also pass raw CSV as the content ...
+
+```
+<Table csv={`
+Year,Temp Anomaly
+1850,-0.418
+2020,0.923
+`} />
+```
+
+<Table csv={`
+Year,Temp Anomaly,
+1850,-0.418
+2020,0.923
+`} />
+
+
+---
+
+Go back [home](/).
