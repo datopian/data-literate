@@ -85,10 +85,42 @@ Global temperatures have been rising, especially since 1980, relative to histori
 }
 } />
 
+### The Carbon Budget
+
+Fn in IPCC 1.5 chapter 2 https://www.ipcc.ch/sr15/chapter/chapter-2/
+
+> Chapter 1 has assessed historical warming between the 1850–1900 and 2006–2015 periods to be 0.87°C with a ±0.12°C likely (1-standard deviation) range, and global near-surface air temperature to be 0.97°C. The temperature changes from the 2006–2015 period are expressed in changes of global near-surface air temperature.
+>
+> Historical CO2 emissions since the middle of the 1850–1900 historical base period (mid-1875) are estimated at 1940 GtCO2 (1640–2240 GtCO2, one standard deviation range) until end 2010. Since 1 January 2011, an additional 290 GtCO2 (270–310 GtCO2, one sigma range) has been emitted until the end of 2017 (Le Quéré et al., 2018).
 
 ## What do we need to do?
 
 ### What emissions reductions do we need?
+
+We have a remaining carbon budget of max 420 GtCO2 (from 2018). This implies reducing emissions to net zero by 2050 assuming rapid reductions now -- or much earlier if significant reductions dont' start now.
+
+As of 2021, we are not following that pathway and hence net zero should already be earlier *and* reductions must start now and fast.
+
+From the IPCC 1.5 report in 2018: https://www.ipcc.ch/sr15/chapter/chapter-2/
+
+> Cumulative CO2 emissions are kept within a budget by reducing global annual CO2 emissions to net zero. This assessment suggests a remaining budget of about 420 GtCO2 for a two-thirds chance of limiting warming to 1.5°C, and of about 580 GtCO2 for an even chance (medium confidence). The remaining carbon budget is defined here as cumulative CO2 emissions from the start of 2018 until the time of net zero global emissions for global warming defined as a change in global near-surface air temperatures. Remaining budgets applicable to 2100 would be approximately 100 GtCO2 lower than this to account for permafrost thawing and potential methane release from wetlands in the future, and more thereafter. These estimates come with an additional geophysical uncertainty of at least ±400 GtCO2, related to non-CO2 response and TCRE distribution. Uncertainties in the level of historic warming contribute ±250 GtCO2. In addition, these estimates can vary by ±250 GtCO2 depending on non-CO2 mitigation strategies as found in available pathways. {2.2.2, 2.6.1}
+> 
+> Staying within a remaining carbon budget of 580 GtCO2 implies that CO2 emissions reach carbon neutrality in about 30 years, reduced to 20 years for a 420 GtCO2 remaining carbon budget (high confidence). The ±400 GtCO2 geophysical uncertainty range surrounding a carbon budget translates into a variation of this timing of carbon neutrality of roughly ±15–20 years. If emissions do not start declining in the next decade, the point of carbon neutrality would need to be reached at least two decades earlier to remain within the same carbon budget. {2.2.2, 2.3.5}
+
+Here's a key diagram from IPCC SR15:
+
+![](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/01/Figure-2.5-1024x735.jpg)
+
+Note that reading this carefully it is clear that electricity (white area under the graphs) is net-zero much earlier than 2050 by 2030 or 2040. That means a complete transition to net zero green energy in the next decade! This intuition is borne out by this next figure:
+
+> Fig 2.14: Decomposition of transformation pathways into (a) energy demand, (b) carbon intensity of electricity, (c) the electricity share in final energy, and (d) the carbon intensity of the residual (non-electricity) fuel mix
+
+If you focus on light blue and dark blue one sees that electricity has carbon intensity at or close to zero by 2030. Note that most models don't assume 100% renewable but rather increasing renewable plus carbon capture and storage for fossil fuel plants still runing. ("The share of energy from renewable sources (including biomass, hydro, solar, wind and geothermal) increases in all 1.5°C pathways with no or limited overshoot, with the renewable energy share of primary energy reaching 38–88% in 2050")
+
+![](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/01/Figure-2.14-1024x674.jpg)
+
+
+Another one from OWID
 
 ![](https://ourworldindata.org/app/uploads/2020/11/15C-and-2C-mitigation-scenarios-1536x987.png)
 
