@@ -8,6 +8,7 @@ const navigation = [
   { name: 'Demo', href: '/demo/', current: false },
   { name: 'About', href: '/about', current: false },
   { name: 'Climate', href: '/climate-change/', current: false },
+  { name: 'Github', href: 'https://github.com/datopian/data-literate', current: false },
 ]
 
 function classNames(...classes) {
