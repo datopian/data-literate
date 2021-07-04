@@ -10,8 +10,8 @@ export default function Index({ posts }) {
     <Layout>
       <h1 className="text-center">Data Literate Documents</h1>
       <p className="text-center">Rufus Pollock and friends<br/><img src="/datopian-logo.png" className="h-6 inline-block" /></p>
-      <p><strong>What?</strong> An experiment in a ultra-simple markdown-plus approach to rapidly creating and sharing data-rich material such as datasets and data-driven stories.</p>
-      <p><strong>Why?</strong> A simple, fast, extensible way to present data(sets) and author data-driven content.</p>
+      <p><strong>What?</strong> An experiment in simple, lightweight approach to creating and sharing datasets and data-driven stories.</p>
+      <p><strong>Why?</strong> I want a simple, fast, extensible way to present data(sets) and author data-driven content. I want to work with markdown for content and quickly add content in the simplest way possible e.g. dropping in links or adding them to the metadata.</p>
       <p><strong>How?</strong> Technically the essence is Markdown+React (MDX) + a curated toolkit of components for data-presentation + NextJS for framework and deployment. Check out the <Link href="/demo/"><a>demo</a></Link>, an example or see more examples below</p>
 
       <h2>Background</h2>
