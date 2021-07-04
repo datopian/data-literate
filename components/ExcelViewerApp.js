@@ -55,7 +55,6 @@ function SheetJSApp() {
       <DragDropFile handleFile={handleFile}>
         <h2>Drag or choose a spreadsheet file</h2>
         <div className="">
-          <h3>Select a file</h3>
           <DataInput handleFile={handleFile} />
         </div>
       </DragDropFile>

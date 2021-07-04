@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import SheetJSApp from '../components/ExcelViewer.js'
+import SheetJSApp from '../components/ExcelViewerApp.js'
 import Layout from '../components/Layout'
 
 export default function Index() {
   return (
-    <Layout>
-      <h1>Home Page</h1>
+    <Layout title='Excel Viewer'>
+      <h1>Excel Viewer</h1>
       <SheetJSApp />
     </Layout>
   )
