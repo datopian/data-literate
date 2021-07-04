@@ -29,6 +29,7 @@ const components = {
   // See the notes in README.md for more details.
   TestComponent: dynamic(() => import('../components/TestComponent')),
   Table: dynamic(() => import('../components/Table')),
+  Excel: dynamic(() => import('../components/Excel')),
   // TODO: try and make these dynamic ...
   Vega: Vega,
   VegaLite: VegaLite,

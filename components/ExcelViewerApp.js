@@ -18,7 +18,6 @@ function SheetJSApp() {
 	}
 
   const handleUrl = (url) => {
-    console.log(url)
     let oReq = new XMLHttpRequest();
     oReq.open("GET", url, true);
     oReq.responseType = "arraybuffer";
