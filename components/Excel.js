@@ -12,6 +12,8 @@ export default function Excel ({ src='' }) {
 	const [error, setError] = React.useState('')
   const [hasMounted, setHasMounted] = React.useState(0)
 
+  // so this is here so we re-render this in the browser
+  // and not just when we build the page statically in nextjs
   useEffect(() => {
     if (hasMounted==0) {
       handleUrl(src)
@@ -20,6 +22,11 @@ export default function Excel ({ src='' }) {
   })
   
   function handleUrl(url) {
+    // if url is external may have CORS issue so we proxy it ...
+    if (url.startsWith('http')) {
+      const PROXY_URL = window.location.origin + '/api/proxy'
+      url = PROXY_URL + '?url=' + encodeURIComponent(url)
+    }
     axios.get(url, {
       responseType: 'arraybuffer'
     }).then((res) => {
