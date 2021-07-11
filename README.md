@@ -23,3 +23,9 @@ Our "data literate" document is a markdown (or MDX) file with the following addi
 * :rocket: **Table of Contents**: quickly add a table of contents by adding a markdown heading 'Table of Contents', 'toc', or 'table-of-contents' (thanks to `remark-toc`)
 * Table rendering: TODO
 * :construction: Auto-render linked tables: auto-convert links to CSV or Excel into inline tables. [in progress]
+
+## Developers
+
+Environment variables:
+
+* For github communication you need to set `APP_GITHUB_KEY` with a personal access token with read permission on public repos
