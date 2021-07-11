@@ -9,6 +9,7 @@ const navigation = [
   { name: 'About', href: '/about', current: false },
   { name: 'Excel Viewer', href: '/excel-viewer/', current: false },
   { name: 'Climate', href: '/climate-change/', current: false },
+  { name: 'Topics', href: '/topics/', current: false },
   { name: 'Github', href: 'https://github.com/datopian/data-literate', current: false },
 ]
 
