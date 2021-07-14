@@ -26,7 +26,7 @@ const components = {
 
 export default function DataLiterate({ children, source, frontMatter }) {
   return (
-    <Layout>
+    <Layout title={frontMatter.title}>
       <header>
         <div className="mb-6">
           <h1>{frontMatter.title}</h1>
