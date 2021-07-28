@@ -1,3 +1,11 @@
+# DEPRECATED 
+
+# MERGED into https://portaljs.org
+
+# SEE https://portaljs.org/data-literate
+
+---
+
 Experiments in data display.
 
 An experimental playground for code that and examples that may find there way into Portal.js and DataHub.io.
@@ -18,11 +26,7 @@ I want things like:
 
 ## Data Literate Documents
 
-Our "data literate" document is a markdown (or MDX) file with the following additional features:
-
-* :rocket: **Table of Contents**: quickly add a table of contents by adding a markdown heading 'Table of Contents', 'toc', or 'table-of-contents' (thanks to `remark-toc`)
-* Table rendering: TODO
-* :construction: Auto-render linked tables: auto-convert links to CSV or Excel into inline tables. [in progress]
+See https://portaljs.org/data-literate
 
 ## Developers
 
